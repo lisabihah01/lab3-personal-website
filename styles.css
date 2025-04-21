@@ -63,6 +63,12 @@ nav ul li a:hover {
     color: #003366; /* Darker contrast */
 }
 
+/* Add styling for bold text inside links */
+a strong {
+    color: #ff6600; /* Orange for bolded text */
+    font-weight: bold;
+}
+
 /* Main content styling */
 main {
     flex: 1; /* Allows the main content to take up remaining space */
