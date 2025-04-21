@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #e0ffff, #f0f8ff); /* Soft blue shades for a dreamy look */
+            background: linear-gradient(to bottom, #e0ffff, #f0f8ff); /* Dreamy gradient background */
             color: #333;
             margin: 0;
         }
+
         header {
             background-color: #4682b4; /* Steel blue */
             color: white;
@@ -19,12 +20,14 @@
             padding: 20px;
             border-bottom: 5px solid #87ceeb; /* Decorative border */
         }
+
         nav {
             background-color: #87ceeb; /* Sky blue */
             text-align: center;
             padding: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
+
         nav a {
             text-decoration: none;
             color: white;
@@ -33,41 +36,32 @@
             margin: 0 10px;
             transition: color 0.3s ease;
         }
+
         nav a:hover {
             color: #4682b4;
         }
+
         main {
             padding: 20px;
             text-align: center;
         }
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 4px solid #4682b4;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
         }
-        .biodata-container {
-            background-color: #e6f7ff; /* Light blue */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .biodata-header {
-            background-color: #87ceeb; /* Sky blue */
-            color: white;
+
+        th, td {
+            border: 1px solid black;
             padding: 10px;
-            border-radius: 10px 10px 0 0;
-        }
-        .biodata-details {
             text-align: left;
-            padding: 10px 20px;
-            font-size: 1.1em;
         }
-        .biodata-details li {
-            margin: 10px 0;
+
+        th {
+            background-color: #f2f2f2;
         }
+
         footer {
             background-color: #4682b4;
             color: white;
@@ -80,28 +74,102 @@
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Biodata</h1>
     </header>
+
+    <!-- Navigation Section -->
     <nav>
         <a href="index.html">Back to Home</a>
     </nav>
+
+    <!-- Main Content Section -->
     <main>
-        <img src="ProfilePictureMe.jpeg" alt="A photo of Aellisa Nabihah Binti Azhan">
-        <div class="biodata-container">
-            <div class="biodata-header">
-                <h2>Aellisa Nabihah Binti Azhan</h2>
-            </div>
-            <ul class="biodata-details">
-                <li><strong>Age:</strong> 23</li>
-                <li><strong>Education:</strong> Universiti Tun Hussein Onn Malaysia (UTHM)</li>
-                <li><strong>Interests:</strong> Web Development, UI/UX Design, Networking</li>
-                <li><strong>Hobbies:</strong> Drawing, Badminton, Gaming</li>
-                <li><strong>Contact:</strong> lisabihah2001@gmail.com</li>
-                <li><strong>Religion:</strong> Islam</li>
-            </ul>
-        </div>
+        
+        <table>
+            <!-- Name -->
+            <tr>
+                <th>Name</th>
+                <td>AELLISA NABIHAH BINTI AZHAN</td>
+            </tr>
+
+            <!-- Photo -->
+            <tr>
+                <th>Photo</th>
+                <td><img src="AELLISA.jpeg" alt="Your Photo" width="200"></td>
+            </tr>
+
+            <!-- Date of Birth -->
+            <tr>
+                <th>Date of Birth</th>
+                <td>26/12/2001</td>
+            </tr>
+
+            <!-- Religion and Race -->
+            <tr>
+                <th>Religion</th>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <th>Race</th>
+                <td>Malaysia</td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <th rowspan="4">Address</th>
+                <td>Street: Presint 5</td>
+            </tr>
+            <tr>
+                <td>Town: Putrajaya</td>
+            </tr>
+            <tr>
+                <td>District: Putrajaya</td>
+            </tr>
+            <tr>
+                <td>State: Wilayah Persekutuan Putrajaya</td>
+            </tr>
+
+            <!-- Contact -->
+            <tr>
+                <th rowspan="3">Contact</th>
+                <td>Mobile Phone: 0173286675</td>
+            </tr>
+            <tr>
+                <td>Social Media: Tiktok</td>
+            </tr>
+            <tr>
+                <td>Website: lisabihah2001@gmail.com</td>
+            </tr>
+
+            <!-- Course & Institution -->
+            <tr>
+                <th>Course & Institution</th>
+                <td>Information Technology & UTHM</td>
+            </tr>
+
+            <!-- Programming Skills -->
+            <tr>
+                <th>Programming Skills</th>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+
+            <!-- Hobbies -->
+            <tr>
+                <th>Hobbies</th>
+                <td>Game, Badminton & Drawing</td>
+            </tr>
+
+            <!-- 2025 Wishlist -->
+            <tr>
+                <th>2025 Wishlist</th>
+                <td>Stay Healthy, Happy Family & Successfully</td>
+            </tr>
+        </table>
     </main>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; Personal 2025 | Aellisa Nabihah Binti Azhan</p>
     </footer>

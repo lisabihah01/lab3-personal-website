@@ -29,6 +29,19 @@ header {
     flex-direction: column; /* Stacks logo and heading vertically */
     align-items: center; /* Centers the logo and heading */
     gap: 10px; /* Adds space between logo and heading */
+    animation: slideDown 2s ease-in-out; /* Header animation */
+}
+
+/* Animation for header */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Navigation menu */
@@ -55,18 +68,13 @@ nav ul li a {
     font-weight: bold;
     padding: 8px 16px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Hover animation */
 }
 
 nav ul li a:hover {
     background-color: #99ccff; /* Light blue for hover effect */
     color: #003366; /* Darker contrast */
-}
-
-/* Add styling for bold text inside links */
-a strong {
-    color: #ff6600; /* Orange for bolded text */
-    font-weight: bold;
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 /* Main content styling */
@@ -79,9 +87,20 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    display: flex; /* Optional: Flexbox for inside elements */
+    display: flex; /* Flexbox for inside elements */
     justify-content: center; /* Center-aligns any content inside main */
     align-items: center; /* Center-aligns vertically */
+    animation: fadeIn 1.5s ease-in forwards; /* Fade-in animation */
+}
+
+/* Animation for main content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Footer styling */
@@ -93,6 +112,19 @@ footer {
     display: flex; /* Flexbox layout for footer */
     justify-content: center; /* Center-align footer content */
     align-items: center;
+    animation: slideUp 2s ease-in-out; /* Footer animation */
+}
+
+/* Animation for footer */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Side bar (if applicable) */
@@ -123,12 +155,10 @@ img {
     border: 5px solid #1a75ff; /* Blue border */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
-/* Animation for the logo */
-.animated-logo {
-    animation: bounce 2s infinite;
+    animation: bounce 2s infinite; /* Added animation for profile image */
 }
 
+/* Bounce animation for images */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -140,37 +170,3 @@ img {
         transform: translateY(-5px);
     }
 }
-
-/* Animation for the header text */
-.fade-in-text {
-    opacity: 0;
-    animation: fadeIn 3s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/* Animation for profile image */
-@keyframes scaleUpAndDown {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    border: 5px solid #1a75ff; /* Blue border */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    animation: scaleUpAndDown 2s infinite; /* Added animation */
-}
-
