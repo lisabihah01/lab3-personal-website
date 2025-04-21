@@ -6,86 +6,76 @@
     <title>Biodata</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Page-specific styling */
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #f0f8ff, #b3d9ff); /* Soft gradient */
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #e0ffff, #f0f8ff); /* Soft blue shades for a dreamy look */
             color: #333;
             margin: 0;
-            padding: 0;
         }
-
         header {
-            background-color: #4da6ff;
+            background-color: #4682b4; /* Steel blue */
             color: white;
             text-align: center;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #87ceeb; /* Decorative border */
         }
-
         nav {
+            background-color: #87ceeb; /* Sky blue */
             text-align: center;
-            margin: 20px 0;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-
         nav a {
             text-decoration: none;
-            color: #4da6ff;
+            color: white;
             font-weight: bold;
-            font-size: 1.2em;
-            transition: color 0.3s;
+            font-size: 1.1em;
+            margin: 0 10px;
+            transition: color 0.3s ease;
         }
-
         nav a:hover {
-            color: #00264d;
+            color: #4682b4;
         }
-
         main {
+            padding: 20px;
             text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
         }
-
         img {
-            display: block;
-            margin: 0 auto 20px;
             width: 200px;
-            height: 400px;
+            height: 200px;
             border-radius: 50%;
-            border: 4px solid #4da6ff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 4px solid #4682b4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
         }
-
         .biodata-container {
-            background-color: #e6f7ff;
+            background-color: #e6f7ff; /* Light blue */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         .biodata-header {
-            background-color: #1a75ff;
+            background-color: #87ceeb; /* Sky blue */
             color: white;
             padding: 10px;
             border-radius: 10px 10px 0 0;
         }
-
         .biodata-details {
             text-align: left;
             padding: 10px 20px;
             font-size: 1.1em;
         }
-
         .biodata-details li {
             margin: 10px 0;
         }
-
         footer {
-            background-color: #4da6ff;
+            background-color: #4682b4;
             color: white;
             text-align: center;
             padding: 10px;
-            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -97,10 +87,7 @@
         <a href="index.html">Back to Home</a>
     </nav>
     <main>
-        <!-- Profile Picture -->
         <img src="ProfilePictureMe.jpeg" alt="A photo of Aellisa Nabihah Binti Azhan">
-
-        <!-- Biodata Container -->
         <div class="biodata-container">
             <div class="biodata-header">
                 <h2>Aellisa Nabihah Binti Azhan</h2>
@@ -111,7 +98,7 @@
                 <li><strong>Interests:</strong> Web Development, UI/UX Design, Networking</li>
                 <li><strong>Hobbies:</strong> Drawing, Badminton, Gaming</li>
                 <li><strong>Contact:</strong> lisabihah2001@gmail.com</li>
-                <li><strong>Religion</strong></li>
+                <li><strong>Religion:</strong> Islam</li>
             </ul>
         </div>
     </main>

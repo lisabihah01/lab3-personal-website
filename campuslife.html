@@ -41,16 +41,26 @@
             padding: 20px;
             text-align: center;
         }
-        img {
-            max-width: 100%;
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-item {
+            flex: 1 1 calc(50% - 40px); /* Responsive size for two items per row */
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .image-item img {
+            width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
         }
         .description {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            font-size: 1.1em;
+            margin-top: 10px;
         }
         footer {
             background-color: #4682b4;
@@ -72,13 +82,15 @@
     </nav>
     <main>
         <p>Here are some visual highlights:</p>
-        <div>
-            <img src="Raya.jpg" alt="Description of image 1">
-            <p class="description">This is the first memorable moment captured.</p>
-        </div>
-        <div>
-            <img src="Program.jpg" alt="Description of image 2">
-            <p class="description">This is the second memorable moment captured.</p>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="Raya.jpg" alt="Description of image 1">
+                <p class="description">Jamuan Hari Raya With Ts. Dr. Suziyanti Binti Marjudi.</p>
+            </div>
+            <div class="image-item">
+                <img src="Program.jpg" alt="Description of image 2">
+                <p class="description">Program Fakulty.</p>
+            </div>
         </div>
     </main>
     <footer>

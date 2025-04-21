@@ -13,7 +13,6 @@
             color: #333;
             margin: 0;
         }
-
         header {
             background-color: #4682b4; /* Steel blue */
             color: white;
@@ -21,14 +20,12 @@
             padding: 20px;
             border-bottom: 5px solid #87ceeb; /* Decorative border */
         }
-
         nav {
             background-color: #87ceeb; /* Sky blue */
             text-align: center;
             padding: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-
         nav a {
             text-decoration: none;
             color: white;
@@ -37,48 +34,24 @@
             margin: 0 10px;
             transition: color 0.3s ease;
         }
-
         nav a:hover {
             color: #4682b4;
         }
-
         main {
             padding: 20px;
             text-align: center;
         }
-
-        p {
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+        .description {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #e6f7ff; /* Pale blue */
-            margin: 10px auto;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-        }
-
-        li a {
-            color: #4682b4; /* Link color */
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-            transition: color 0.3s ease;
-        }
-
-        li a:hover {
-            color: #003366; /* Dark blue */
-        }
-
         footer {
             background-color: #4682b4;
             color: white;
@@ -98,9 +71,21 @@
         <a href="hobbies.html">Back to Hobbies</a>
     </nav>
     <main>
-        <p>Here is one of my favorite gaming moments:</p>
-        <!-- Image of your gaming activity -->
-        <img src="gaming.jpg" alt="A gaming highlight" width="500">
+        <p>Here are some of my favorite gaming moments:</p>
+        <ul>
+            <li>
+                <img src="MLBB.jpg" alt="Gaming Moment 1">
+                <p class="description">This is my first memorable gaming experience.</p>
+            </li>
+            <li>
+                <img src="PUBG.jpg" alt="Gaming Moment 2">
+                <p class="description">Here is another fantastic gaming highlight.</p>
+            </li>
+            <li>
+                <img src="HOK.jpg" alt="Gaming Moment 3">
+                <p class="description">Gaming with friends always creates unforgettable memories.</p>
+            </li>
+        </ul>
     </main>
     <footer>
         <p>&copy; Personal 2025 | Aellisa Nabihah Binti Azhan</p>
